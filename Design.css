@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #4a4037;
+    background: linear-gradient(rgba(212, 196, 185, 0.3), rgba(193, 154, 107, 0.3)), 
+                url('https://images.unsplash.com/photo-1500382017468-7049fae79166?w=1200&q=80') center/cover fixed;
+    min-height: 100vh;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+    background: rgba(255, 255, 255, 0.98);
+}
+
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #C19A6B 0%, #A68457 100%);
+    color: white;
+    border-radius: 10px 10px 0 0;
+    margin: -20px -20px 30px -20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+
+nav {
+    background: #8B7355;
+    padding: 0;
+    margin: -20px -20px 30px -20px;
+    border-radius: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+}
+
+nav li {
+    flex: 1;
+    min-width: 120px;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: #C19A6B;
+}
+
+nav a.active {
+    background: #C19A6B;
+    border-bottom: 3px solid #A68457;
+}
+
+.btn-nav {
+    display: block;
+    padding: 15px 20px;
+    background: #C19A6B;
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.btn-nav:hover {
+    background: #A68457;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, rgba(193, 154, 107, 0.15), rgba(168, 132, 87, 0.15));
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+
+.btn {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #C19A6B 0%, #A68457 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(193, 154, 107, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(193, 154, 107, 0.6);
+}
+
+.btn-primary:active {
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: #C19A6B;
+    color: white;
+    margin-top: 15px;
+}
+
+.btn-secondary:hover {
+    background: #A68457;
+    transform: translateY(-2px);
+}
+
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.section-card {
+    background: linear-gradient(135deg, #C19A6B 0%, #A68457 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(193, 154, 107, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(193, 154, 107, 0.5);
+}
+
+.section-card h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.section-card p {
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.section-card p {
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.filler-section {
+    background: #FAF5F0;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border-left: 5px solid #C19A6B;
+}
+
+.filler-section h3 {
+    color: #A68457;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.filler-section p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+
+.textbox-section {
+    background: #FAF5F0;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.textbox-section h3 {
+    color: #A68457;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.textbox-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.textbox-container textarea {
+    padding: 15px;
+    border: 2px solid #C19A6B;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    resize: vertical;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textbox-container textarea:focus {
+    outline: none;
+    border-color: #A68457;
+    box-shadow: 0 0 10px rgba(193, 154, 107, 0.3);
+}
+
+
+footer {
+    background: #8B7355;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: -20px -20px 0 -20px;
+    border-radius: 0 0 10px 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        flex: 1;
+        min-width: auto;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 12px 15px;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .textbox-container textarea {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .btn {
+        padding: 12px 30px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    header {
+        padding: 25px 15px;
+        margin: -15px -15px 20px -15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    nav {
+        margin: -15px -15px 20px -15px;
+    }
+
+    nav a {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .section-card {
+        padding: 20px;
+    }
+
+    .section-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .filler-section,
+    .textbox-section {
+        padding: 20px;
+    }
+
+    .textbox-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
