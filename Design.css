@@ -52,33 +52,46 @@ header p {
 
 
 nav {
-    background: #8B7355;
-    padding: 0;
+    background: #C19A6B;
+    padding: 16px 0 12px;
     margin: -20px -20px 30px -20px;
-    border-radius: 0;
+    border-radius: 14px;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     justify-content: center;
-    gap: 0;
+    gap: 10px;
+    padding: 0 14px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 nav li {
-    flex: 1;
-    min-width: 120px;
     display: flex;
 }
 
-nav a {
-    display: block;
-    padding: 15px 20px;
+nav a,
+.btn-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 10px;
+    min-height: 68px;
     color: white;
     text-decoration: none;
     text-align: center;
     transition: background 0.3s ease;
+    background: #C19A6B;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.2;
 }
 
 nav a:hover {
@@ -94,7 +107,7 @@ nav a:hover {
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 1rem;
+    font-size: 0.92rem;
     width: 100%;
     flex: 1;
     font-weight: 600;
@@ -104,7 +117,7 @@ nav a:hover {
 .btn-nav:hover {
     background: #A68457;
     text-decoration: underline;
-    font-size: 1.1rem;
+    font-size: 0.92rem;
 }
 
 .nav-link {
@@ -116,7 +129,7 @@ nav a:hover {
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 1rem;
+    font-size: 0.92rem;
     width: 100%;
     flex: 1;
     font-weight: 600;
@@ -126,7 +139,7 @@ nav a:hover {
 .nav-link:hover {
     background: #A68457;
     text-decoration: underline;
-    font-size: 1.1rem;
+    font-size: 0.92rem;
 }
 
 
